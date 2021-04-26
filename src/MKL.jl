@@ -1,6 +1,8 @@
 module MKL
 
 using MKL_jll
+import Pkg
+using Artifacts
 
 JULIA_VER_NEEDED = v"1.7.0-DEV.641"
 VERSION > JULIA_VER_NEEDED && using LinearAlgebra
