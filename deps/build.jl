@@ -1,7 +1,9 @@
-if VERSION > v"1.6"
+if VERSION >= v"1.7"
     exit() # Don't want to build the system image, since we will use LBT
 end
 
+import Pkg
+import Artifacts
 using PackageCompiler
 using MKL_jll
 
